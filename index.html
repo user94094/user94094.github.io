@@ -112,6 +112,34 @@
             grid-area: image10;
             margin-bottom: 50px;
         }
+
+        @media screen and (max-width: 800px) {
+            body {
+                margin: 20px 20px;
+                background-color: #1d2021;
+            }
+
+            .image-container {
+                grid-template-areas:
+                    "image1"
+                    "image2"
+                    "image3"
+                    "image4"
+                    "image5"
+                    "image6"
+                    "image7"
+                    "image8"
+                    "image9"
+                    "image10"
+                    "ad1"
+                    "ad2";
+                grid-template-columns: 1fr;
+            }
+
+            .image-container>div>a {
+                font-size: large;
+            }
+        }
     </style>
     <script>
         var image1 = document.getElementById(image1);
