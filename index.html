@@ -1,7 +1,316 @@
-<html>
-    <head>
-        <title>user94094</title>
-    </head>
-    <body>
-        <h1>user94094</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .image-container {
+            width: 100%;
+            background-color: #1d2021;
+            display: grid;
+            grid-template-areas:
+                "ad1 image1 image2 ad2"
+                "ad1 image3 image4 ad2"
+                "ad1 image5 image6 ad2"
+                "ad1 image7 image8 ad2"
+                "ad1 image9 image10 ad2";
+            grid-template-columns: 1fr 3fr 3fr 1fr;
+            /*vertically*/
+            align-items: center;
+            /*horizontally*/
+            justify-items: center;
+            grid-gap: 40px 40px;
+        }
+
+        .image-container>div>img {
+            width: 100%;
+        }
+
+        .image-container>div>a {
+            display: block;
+            width: fit-content;
+            margin: 0px auto;
+            position: relative;
+            top: -50px;
+            margin-bottom: -50px;
+            padding: 0px 10px;
+            background-color: #1d2021;
+            border: 2px solid #458588;
+            color: #458588;
+            font-family: monospace;
+            font-weight: bold;
+            font-size: x-large;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .image-container>div>a:hover {
+            color: #a89984;
+        }
+
+        .image-container>div>a:visited {
+            text-decoration: none;
+        }
+
+        .image-container-ad-1 {
+            grid-area: ad1;
+            width: 100%;
+            height: 100%;
+        }
+
+        .image-container-ad-2 {
+            grid-area: ad2;
+            width: 100%;
+            height: 100%;
+        }
+
+        .image-container-item-1 {
+            grid-area: image1;
+        }
+
+        .image-container-item-2 {
+            grid-area: image2;
+        }
+
+        .image-container-item-3 {
+            grid-area: image3;
+        }
+
+        .image-container-item-4 {
+            grid-area: image4;
+        }
+
+        .image-container-item-5 {
+            grid-area: image5;
+        }
+
+        .image-container-item-6 {
+            grid-area: image6;
+        }
+
+        .image-container-item-7 {
+            grid-area: image7;
+        }
+
+        .image-container-item-8 {
+            grid-area: image8;
+        }
+
+        .image-container-item-9 {
+            grid-area: image9;
+            margin-bottom: 50px;
+        }
+
+        .image-container-item-10 {
+            grid-area: image10;
+            margin-bottom: 50px;
+        }
+    </style>
+    <script>
+        var image1 = document.getElementById(image1);
+        var image2 = document.getElementById(image2);
+        var image3 = document.getElementById(image3);
+        var image4 = document.getElementById(image4);
+        var image5 = document.getElementById(image5);
+        var image6 = document.getElementById(image6);
+        var image7 = document.getElementById(image7);
+        var image8 = document.getElementById(image8);
+        var image9 = document.getElementById(image9);
+        var image10 = document.getElementById(image10);
+        var download1 = document.getElementById(download1);
+        var download2 = document.getElementById(download2);
+        var download3 = document.getElementById(download3);
+        var download4 = document.getElementById(download4);
+        var download5 = document.getElementById(download5);
+        var download6 = document.getElementById(download6);
+        var download7 = document.getElementById(download7);
+        var download8 = document.getElementById(download8);
+        var download9 = document.getElementById(download9);
+        var download10 = document.getElementById(download10);
+        function randomimage() {
+            const usernames = [
+                "bananagamer69.github.io",
+                "spongebob-repo.github.io",
+                "meet-thummar-repo.github.io",
+                "tmeet4237.github.io",
+                "230200107132.github.io",
+                "crazy-movies.github.io",
+                "spongebob-repo.github.io"];
+            const wallpapers = [
+                "wallpaper (1)",
+                "wallpaper (2)",
+                "wallpaper (3)",
+                "wallpaper (4)",
+                "wallpaper (5)",
+                "wallpaper (6)",
+                "wallpaper (7)",
+                "wallpaper (8)",
+                "wallpaper (9)",
+                "wallpaper (10)",
+                "wallpaper (11)",
+                "wallpaper (12)",
+                "wallpaper (13)",
+                "wallpaper (14)",
+                "wallpaper (15)",
+                "wallpaper (16)",
+                "wallpaper (17)",
+                "wallpaper (18)",
+                "wallpaper (19)",
+                "wallpaper (20)",
+                "wallpaper (21)",
+                "wallpaper (22)",
+                "wallpaper (23)",
+                "wallpaper (24)",
+                "wallpaper (25)",
+                "wallpaper (26)",
+                "wallpaper (27)",
+                "wallpaper (28)",
+                "wallpaper (29)",
+                "wallpaper (30)",
+                "wallpaper (31)",
+                "wallpaper (32)",
+                "wallpaper (33)",
+                "wallpaper (34)",
+                "wallpaper (35)",
+                "wallpaper (36)",
+                "wallpaper (37)",
+                "wallpaper (38)",
+                "wallpaper (39)",
+                "wallpaper (40)",
+                "wallpaper (41)",
+                "wallpaper (42)",
+                "wallpaper (43)",
+                "wallpaper (44)",
+                "wallpaper (45)",
+                "wallpaper (46)",
+                "wallpaper (47)",
+                "wallpaper (48)",
+                "wallpaper (49)",
+                "wallpaper (50)",
+                "wallpaper (51)",
+                "wallpaper (52)",
+                "wallpaper (53)",
+                "wallpaper (54)",
+                "wallpaper (55)",
+                "wallpaper (56)",
+                "wallpaper (57)",
+                "wallpaper (58)",
+                "wallpaper (59)",
+                "wallpaper (60)",
+                "wallpaper (61)",
+                "wallpaper (62)",
+                "wallpaper (63)",
+                "wallpaper (64)",
+                "wallpaper (65)",
+                "wallpaper (66)",
+                "wallpaper (67)",
+                "wallpaper (68)",
+                "wallpaper (69)",
+                "wallpaper (70)",
+                "wallpaper (71)",
+                "wallpaper (72)",
+                "wallpaper (73)",
+                "wallpaper (74)",
+                "wallpaper (75)",
+                "wallpaper (76)",
+                "wallpaper (77)",
+                "wallpaper (78)",
+                "wallpaper (79)",
+                "wallpaper (80)",
+                "wallpaper (81)",
+                "wallpaper (82)",
+                "wallpaper (83)",
+                "wallpaper (84)",
+                "wallpaper (85)",
+                "wallpaper (86)",
+                "wallpaper (87)",
+                "wallpaper (88)",
+                "wallpaper (89)",
+                "wallpaper (90)",
+                "wallpaper (91)",
+                "wallpaper (92)",
+                "wallpaper (93)",
+                "wallpaper (94)",
+                "wallpaper (95)",
+                "wallpaper (96)",
+                "wallpaper (97)",
+                "wallpaper (98)",
+                "wallpaper (99)",
+                "wallpaper (100)"];
+            let x = Math.floor(Math.random() * 7);
+            let y = Math.floor(Math.random() * 100);
+            return ("https://" + usernames[x] + "/" + wallpapers[y] + ".jpg");
+        }
+        function imagechange() {
+            document.getElementById("image1").src = document.getElementById("download1").href = randomimage();
+            document.getElementById("image2").src = document.getElementById("download2").href = randomimage();
+            document.getElementById("image3").src = document.getElementById("download3").href = randomimage();
+            document.getElementById("image4").src = document.getElementById("download4").href = randomimage();
+            document.getElementById("image5").src = document.getElementById("download5").href = randomimage();
+            document.getElementById("image6").src = document.getElementById("download6").href = randomimage();
+            document.getElementById("image7").src = document.getElementById("download7").href = randomimage();
+            document.getElementById("image8").src = document.getElementById("download8").href = randomimage();
+            document.getElementById("image9").src = document.getElementById("download9").href = randomimage();
+            document.getElementById("image10").src = document.getElementById("download10").href = randomimage();
+        }
+
+    </script>
+</head>
+
+<body onload="imagechange()">
+    <div class="image-container">
+        <div class="image-container-ad-1">ads1</div>
+        <div class="image-container-ad-2">ads2</div>
+        <div class="image-container-item-1">
+            <img id="image1">
+            <a target="_blank" download="wallpaper.jpg" id="download1">Download Link</a>
+        </div>
+
+        <div class="image-container-item-2">
+            <img alt="Image" id="image2">
+            <a target="_blank" download="wallpaper.jpg" id="download2">Download Link</a>
+        </div>
+        <div class="image-container-item-3">
+            <img alt="Image" id="image3">
+            <a target="_blank" download="wallpaper.jpg" id="download3">Download Link</a>
+        </div>
+        <div class="image-container-item-4">
+            <img alt="Image" id="image4">
+            <a target="_blank" download="wallpaper.jpg" id="download4">Download Link</a>
+        </div>
+        <div class="image-container-item-5">
+            <img alt="Image" id="image5">
+            <a target="_blank" download="wallpaper.jpg" id="download5">Download Link</a>
+        </div>
+        <div class="image-container-item-6">
+            <img alt="Image" id="image6">
+            <a target="_blank" download="wallpaper.jpg" id="download6">Download Link</a>
+        </div>
+        <div class="image-container-item-7">
+            <img alt="Image" id="image7">
+            <a target="_blank" download="wallpaper.jpg" id="download7">Download Link</a>
+        </div>
+        <div class="image-container-item-8">
+            <img alt="Image" id="image8">
+            <a target="_blank" download="wallpaper.jpg" id="download8">Download Link</a>
+        </div>
+        <div class="image-container-item-9">
+            <img alt="Image" id="image9">
+            <a target="_blank" download="wallpaper.jpg" id="download9">Download Link</a>
+        </div>
+        <div class="image-container-item-10">
+            <img alt="Image" id="image10">
+            <a target="_blank" download="wallpaper.jpg" id="download10">Download Link</a>
+        </div>
+
+    </div>
+</body>
+
 </html>
